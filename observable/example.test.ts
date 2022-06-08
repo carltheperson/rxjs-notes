@@ -15,13 +15,13 @@ describe("Observable", () => {
   });
 
   test("Observable emits asynchronously as expected", (done) => {
-    let values = ["a", "b", "c", "d"];
+    const values = ["a", "b", "c", "d"];
     let i = 0;
     exampleObservable$.subscribe((value) => {
       expect(value).toBe(values[i]);
       i++;
     });
-    setTimeout(() => expect(i).toBe(values.length - 1), 999);
+    setTimeout(() => expect(i).toBe(values.length - 1), 995);
     setTimeout(() => {
       expect(i).toBe(values.length);
       done();
