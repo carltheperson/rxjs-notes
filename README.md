@@ -14,7 +14,7 @@ Subjects:
 	- [x] Observable
 	- [x] Subject
 	- [x] BehaviorSubject
-	- [ ] ReplaySubjects
+	- [ ] ReplaySubject
 
 
 - Creation functions:
