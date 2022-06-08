@@ -10,8 +10,9 @@ Select "subjects" to learn (operators, classes, etc). For each:
 
 Subjects:
 
-- Interfaces/classes:
-	- [ ] Observer
+- Classes:
+	- [ ] Observable
+	- [ ] ConnectableObservable
 	- [ ] Subject
 	- [ ] BehaviorSubject
 
