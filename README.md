@@ -12,8 +12,8 @@ Subjects:
 
 - Classes:
 	- [x] Observable
-	- [ ] Subject
-	- [ ] BehaviorSubject
+	- [x] Subject
+	- [x] BehaviorSubject
 	- [ ] ReplaySubjects
 
 
