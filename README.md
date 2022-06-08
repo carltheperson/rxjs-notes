@@ -11,13 +11,14 @@ Select "subjects" to learn (operators, classes, etc). For each:
 Subjects:
 
 - Classes:
-	- [ ] Observable
-	- [ ] ConnectableObservable
+	- [x] Observable
 	- [ ] Subject
 	- [ ] BehaviorSubject
+	- [ ] ReplaySubjects
 
 
 - Creation functions:
+	- [ ] connectable
 
 - Operators:
 
