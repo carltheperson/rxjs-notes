@@ -9,9 +9,13 @@
   "author": "Carl Riis <carl.aagot.riis@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@swirly/renderer-node": "^0.18.2",
+    "@types/glob": "^7.2.0",
     "@types/jest": "^28.1.1",
+    "glob": "^8.0.3",
     "jest": "^28.1.0",
     "rxjs": "^7.5.5",
+    "swirly": "^0.18.2",
     "ts-jest": "^28.0.4",
     "ts-node": "^10.8.1",
     "tsc": "^2.0.4",
