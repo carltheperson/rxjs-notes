@@ -1,16 +1,13 @@
 import glob from "glob";
 import util from "util";
 import { exec } from "child_process";
+import { unlink } from "fs";
 
 util
-  .promisify(glob)("*/marble-source.txt")
+  .promisify(glob)("*/*-src.txt")
   .then((files) => {
     for (const file of files) {
-      exec(
-        `yarn swirly ${file} ${file.replace(
-          "marble-source.txt",
-          "marble-diagram.png"
-        )} --scale 200`
-      );
+      const diagramName = file.replace("-src.txt", ".png");
+      exec(`yarn swirly ${file} ${diagramName} --scale 200 -f`);
     }
   });

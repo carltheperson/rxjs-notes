@@ -1,8 +1,0 @@
-[styles]
-completion_height = 20
-
--a--bc--d---|
-
-> Stuff here
-
----a---c--d-|
