@@ -18,17 +18,18 @@ Subjects:
 	- [x] [`ReplaySubject`](./notes/replay-subject/)
 
 - Combination operators:
-	- [ ] combineLatest
+	- [x] [`combineLatestWith`](./notes/combine-latest-with/)
 	- [ ] withLatestFrom
 	- [ ] merge
+	- [ ] concat
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)
 	- [ ] scan
 	- [ ] reduce
-	- [ ] share
 	- [ ] switchMap
 	- [ ] concatMap
+	- [ ] mergeMap
 	- [ ] partition
 
 - Filtering operators:
@@ -42,3 +43,4 @@ Subjects:
 
 - Not sure yet:
 	- [ ] last
+	- [ ] share
