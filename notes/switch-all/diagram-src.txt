@@ -1,0 +1,15 @@
+[styles]
+frame_width = 20
+completion_height = 20
+higher_order_angle = 30
+arrow_fill_color = black
+
+1 = --a-b--c-d
+
+2 = --e-f----g
+
+-1----2--------|
+
+> switchAll
+
+---a-b--e-f---g-|

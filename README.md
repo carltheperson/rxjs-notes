@@ -9,6 +9,8 @@ Select "subjects" to learn (operators, classes, etc). For each:
 - Draw a custom marble diagram
 - Write source-code notes
 
+<!-- <img src="./notes/concat/diagram.png" height="250px" /> -->
+
 Subjects:
 
 - Classes:
@@ -23,11 +25,12 @@ Subjects:
 	- [x] [`merge`](./notes/merge/)
 	- [x] [`concat`](./notes/concat/)
 	- [x] [`concatAll`](./notes/concat-all/)
+	- [x] [`switchAll`](./notes/switch-all/)
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)
 	- [x] [`scan`](./notes/scan)
-	- [ ] reduce
+	- [x] [`reduce`](./notes/reduce/)
 	- [ ] switchMap
 	- [ ] concatMap
 	- [ ] mergeMap
