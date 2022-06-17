@@ -15,3 +15,7 @@ const reducedObservable = observable.pipe(
 reducedObservable.subscribe((value) => {
   console.log(value);
 });
+
+/*
+10
+*/
