@@ -22,7 +22,7 @@ Subjects:
 	- [x] [`withLatestFrom`](./notes/with-latest-from/)
 	- [x] [`merge`](./notes/merge/)
 	- [x] [`concat`](./notes/concat/)
-	- [ ] concatAll
+	- [x] [`concatAll`](./notes/concat-all/)
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)

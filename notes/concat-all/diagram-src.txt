@@ -1,0 +1,14 @@
+[styles]
+higher_order_angle = 50
+
+1 = a-b-|
+
+2 = c-d-|
+
+3 = e-f-|
+
+1-2-3
+
+> concatAll
+
+a--b--c--d--e--f--|
