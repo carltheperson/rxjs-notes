@@ -20,8 +20,9 @@ Subjects:
 - Combination operators:
 	- [x] [`combineLatestWith`](./notes/combine-latest-with/)
 	- [x] [`withLatestFrom`](./notes/with-latest-from/)
-	- [x] [`merge`](./notes/merge)
-	- [ ] concat
+	- [x] [`merge`](./notes/merge/)
+	- [x] [`concat`](./notes/concat/)
+	- [ ] concatAll
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)

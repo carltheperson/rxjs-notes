@@ -1,0 +1,9 @@
+a-b-|
+
+c-d-|
+
+e-f-|
+
+> concat
+
+a-b-c-d-e-f-|
