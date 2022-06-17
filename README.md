@@ -14,11 +14,30 @@ Subjects:
 	- [x] Observable
 	- [x] Subject
 	- [x] BehaviorSubject
-	- [ ] ReplaySubject
+	- [x] ReplaySubject
 
+- Combination operators:
+	- [ ] combineLatest
+	- [ ] withLatestFrom
+	- [ ] merge
+
+- Transformation operators:
+	- [ ] map
+	- [ ] scan
+	- [ ] reduce
+	- [ ] share
+	- [ ] switchMap
+	- [ ] concatMap
+	- [ ] partition
+
+- Filtering operators:
+	- [ ] filter
+	- [ ] take
+	- [ ] throttle
+	- [ ] debounce
 
 - Creation functions:
-	- [ ] connectable
+ 	- [ ] of
 
-- Operators:
-
+- Not sure yet:
+	- [ ] last
