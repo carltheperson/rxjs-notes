@@ -19,7 +19,7 @@ Subjects:
 
 - Combination operators:
 	- [x] [`combineLatestWith`](./notes/combine-latest-with/)
-	- [ ] withLatestFrom
+	- [x] [`withLatestFrom`](./notes/with-latest-from/)
 	- [ ] merge
 	- [ ] concat
 
