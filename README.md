@@ -7,14 +7,15 @@ Select "subjects" to learn (operators, classes, etc). For each:
 - Code up a good example
 - Write tests for the example
 - Draw a custom marble diagram
+- Write source-code notes
 
 Subjects:
 
 - Classes:
-	- [x] Observable
-	- [x] Subject
-	- [x] BehaviorSubject
-	- [x] ReplaySubject
+	- [x] [`Observable`](./notes/observable/)
+	- [x] [`Subject`](./notes/subject/)
+	- [x] [`BehaviorSubject`](./notes/behavior-subject/)
+	- [x] [`ReplaySubject`](./notes/replay-subject/)
 
 - Combination operators:
 	- [ ] combineLatest
@@ -22,7 +23,7 @@ Subjects:
 	- [ ] merge
 
 - Transformation operators:
-	- [ ] map
+	- [x] [`map`](./notes/map)
 	- [ ] scan
 	- [ ] reduce
 	- [ ] share
