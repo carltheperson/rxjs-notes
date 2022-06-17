@@ -8,7 +8,7 @@ const observable = new Observable<number>((subscriber) => {
 });
 
 const scannedObservable = observable.pipe(
-  scan((total, value) => total + value)
+  scan((total, value) => total + value, 0)
 );
 
 scannedObservable.subscribe((value) => {
