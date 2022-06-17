@@ -31,9 +31,9 @@ Subjects:
 	- [x] [`map`](./notes/map)
 	- [x] [`scan`](./notes/scan)
 	- [x] [`reduce`](./notes/reduce/)
-	- [ ] switchMap
-	- [ ] concatMap
 	- [ ] mergeMap
+	- [ ] concatMap
+	- [x] [`switchMap`](./notes/switch-map/)
 	- [ ] partition
 
 - Filtering operators:

@@ -1,0 +1,33 @@
+[styles]
+frame_width = 20
+completion_height = 20
+higher_order_angle = 30
+arrow_fill_color = black
+
+o = a--b----c
+a := a1
+b := a2
+c := a3
+
+s = a--b----c
+a := b1
+b := b2
+c := b3
+
+t = a--b----c
+a := c1
+b := c2
+c := c3
+
+---(ao)--(bs)--(ct)------|
+
+> switchMap(...)
+
+---1--2--3--4--5--6----7-|
+1 := a1
+2 := a2
+3 := b1
+4 := b2
+5 := c1
+6 := c2
+7 := c3
