@@ -26,7 +26,7 @@ Subjects:
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)
-	- [ ] scan
+	- [x] [`scan`](./notes/scan)
 	- [ ] reduce
 	- [ ] switchMap
 	- [ ] concatMap
