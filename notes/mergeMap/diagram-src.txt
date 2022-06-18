@@ -1,0 +1,35 @@
+[styles]
+frame_width = 20
+completion_height = 20
+higher_order_angle = 30
+arrow_fill_color = black
+
+o = a---b---c-
+a := a1
+b := a2
+c := a3
+
+s = a---b---c-
+a := b1
+b := b2
+c := b3
+
+t = a---b---c-
+a := c1
+b := c2
+c := c3
+
+---(ao)--(bs)--(ct)------
+
+> mergeMap(...)
+
+---1---2-3-4-5-6-7-8---9-
+1 := a1
+2 := a2
+3 := b1
+4 := a3
+5 := b2
+6 := c1
+7 := b3
+8 := c2
+9 := c3

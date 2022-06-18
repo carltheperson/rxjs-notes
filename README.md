@@ -31,7 +31,7 @@ Subjects:
 	- [x] [`map`](./notes/map)
 	- [x] [`scan`](./notes/scan)
 	- [x] [`reduce`](./notes/reduce/)
-	- [ ] mergeMap
+	- [x] [`mergeMap`](./notes/mergeMap/)
 	- [ ] concatMap
 	- [x] [`switchMap`](./notes/switch-map/)
 	- [ ] partition
