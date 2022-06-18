@@ -37,7 +37,7 @@ Subjects:
 	- [x] [`partition`](./notes/partition/)
 
 - Filtering operators:
-	- [ ] filter
+	- [x] [`filter`](./notes/filer)
 	- [ ] take
 	- [ ] throttle
 	- [ ] debounce
