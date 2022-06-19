@@ -1,12 +1,12 @@
 import { concatMap, Observable } from "rxjs";
 
-const sourceObservable = new Observable<string>((subscriber) => {
+const source = new Observable<string>((subscriber) => {
   setTimeout(() => subscriber.next("a"), 0);
   setTimeout(() => subscriber.next("b"), 200);
   setTimeout(() => subscriber.next("c"), 400);
 });
 
-const concatMappedObservable = sourceObservable.pipe(
+const concatMapped = source.pipe(
   concatMap(
     (letter) =>
       new Observable((subscriber) => {
@@ -17,7 +17,7 @@ const concatMappedObservable = sourceObservable.pipe(
   )
 );
 
-concatMappedObservable.subscribe((value) => {
+concatMapped.subscribe((value) => {
   console.log(value);
 });
 

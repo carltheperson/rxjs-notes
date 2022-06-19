@@ -1,6 +1,6 @@
 import { distinct, Observable } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   subscriber.next("a");
   subscriber.next("a");
   subscriber.next("b");
@@ -11,8 +11,15 @@ const sourceObservable = new Observable((subscriber) => {
   subscriber.next("a");
 });
 
-const distinctObservable = sourceObservable.pipe(distinct());
+const distincted = source.pipe(distinct());
 
-distinctObservable.subscribe((value) => {
+distincted.subscribe((value) => {
   console.log(value);
 });
+
+/*
+a
+b
+c
+d
+*/

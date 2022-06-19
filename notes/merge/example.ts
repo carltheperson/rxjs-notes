@@ -1,31 +1,47 @@
-import { combineLatestWith, merge, Observable } from "rxjs";
+import { merge, Observable } from "rxjs";
 
-const observable1 = new Observable((subscriber) => {
-  subscriber.next("a");
+const source1 = new Observable((subscriber) => {
+  setTimeout(() => subscriber.next("a"));
   setTimeout(() => subscriber.next("b"), 400);
   setTimeout(() => subscriber.next("c"), 600);
   setTimeout(() => subscriber.complete(), 800);
 });
 
-const observable2 = new Observable((subscriber) => {
+const source2 = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("d"), 200);
   setTimeout(() => subscriber.next("e"), 800);
   setTimeout(() => subscriber.complete(), 1000);
 });
 
-const combinedObservable = merge(observable1, observable2);
+const merged = merge(source1, source2);
 
-observable1.subscribe({
+source1.subscribe({
   next: (value) => console.log("o1:  ", value),
   complete: () => console.log("o1:  ", "Done"),
 });
 
-observable2.subscribe({
+source2.subscribe({
   next: (value) => console.log("o2:  ", value),
   complete: () => console.log("o2:  ", "Done"),
 });
 
-combinedObservable.subscribe({
+merged.subscribe({
   next: (value) => console.log("comb:", value),
   complete: () => console.log("comb:", "Done"),
 });
+
+/*
+o1:   a
+comb: a
+o2:   d
+comb: d
+o1:   b
+comb: b
+o1:   c
+comb: c
+o1:   Done
+o2:   e
+comb: e
+o2:   Done
+comb: Done
+*/

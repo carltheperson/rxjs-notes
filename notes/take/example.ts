@@ -1,6 +1,6 @@
 import { Observable, take } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("a"), 100);
   setTimeout(() => subscriber.next("b"), 200);
   setTimeout(() => subscriber.next("c"), 300);
@@ -8,9 +8,9 @@ const sourceObservable = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("e"), 500);
 });
 
-const takenObservable = sourceObservable.pipe(take(3));
+const taken = source.pipe(take(3));
 
-takenObservable.subscribe((value) => {
+taken.subscribe((value) => {
   console.log(value);
 });
 

@@ -54,12 +54,6 @@ Subjects:
 - Util:
 	- [x] [`repeat`](./notes/repeat/)
 
-- Then:
-	- [x] camelCase
-	- [ ] use arrays
-	- [ ] output
-	- [ ] remove "Observable" from name
-
 Each thing will have its own README. It will contain:
 - Short docs description
 - My own description/notes

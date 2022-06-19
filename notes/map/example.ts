@@ -1,13 +1,19 @@
 import { map, Observable } from "rxjs";
 
-const observable = new Observable<string>((subscriber) => {
-  subscriber.next("a");
+const source = new Observable<string>((subscriber) => {
+  setTimeout(() => subscriber.next("a"));
   setTimeout(() => subscriber.next("b"), 100);
   setTimeout(() => subscriber.next("c"), 200);
 });
 
-const mappedObservable = observable.pipe(map((value) => value.toUpperCase()));
+const mapped = source.pipe(map((value) => value.toUpperCase()));
 
-mappedObservable.subscribe((value) => {
+mapped.subscribe((value) => {
   console.log(value);
 });
+
+/*
+A
+B
+C
+*/

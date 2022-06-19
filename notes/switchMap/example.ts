@@ -1,12 +1,12 @@
 import { Observable, switchMap } from "rxjs";
 
-const sourceObservable = new Observable<string>((subscriber) => {
+const source = new Observable<string>((subscriber) => {
   setTimeout(() => subscriber.next("a"), 0);
   setTimeout(() => subscriber.next("b"), 400);
   setTimeout(() => subscriber.next("c"), 800);
 });
 
-const switchMappedObservable = sourceObservable.pipe(
+const switchMapped = source.pipe(
   switchMap(
     (letter) =>
       new Observable((subscriber) => {
@@ -17,7 +17,7 @@ const switchMappedObservable = sourceObservable.pipe(
   )
 );
 
-switchMappedObservable.subscribe((value) => {
+switchMapped.subscribe((value) => {
   console.log(value);
 });
 

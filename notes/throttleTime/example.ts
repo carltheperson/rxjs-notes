@@ -1,6 +1,6 @@
 import { Observable, throttleTime } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("a"), 10);
   setTimeout(() => subscriber.next("b"), 20);
   setTimeout(() => subscriber.next("c"), 30);
@@ -11,10 +11,10 @@ const sourceObservable = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("h"), 120);
 });
 
-const throttledObservable = sourceObservable.pipe(throttleTime(30));
+const throttled = source.pipe(throttleTime(30));
 
 const time = new Date().getTime();
-throttledObservable.subscribe((value) => {
+throttled.subscribe((value) => {
   console.log(value, new Date().getTime() - time);
 });
 

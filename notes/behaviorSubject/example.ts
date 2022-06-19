@@ -1,12 +1,19 @@
 import { BehaviorSubject } from "rxjs";
 
-export const exampleSubject$ = new BehaviorSubject("a");
+export const subject = new BehaviorSubject("a");
 
-console.log("Initial value", exampleSubject$.value);
+console.log("Initial value", subject.value);
 
-exampleSubject$.subscribe((val) => {
+subject.subscribe((val) => {
   console.log("Got value", val);
 });
 
-exampleSubject$.next("b");
-exampleSubject$.next("c");
+subject.next("b");
+subject.next("c");
+
+/*
+Initial value a
+Got value a
+Got value b
+Got value c
+*/

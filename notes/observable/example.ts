@@ -1,6 +1,6 @@
 import { Observable } from "rxjs";
 
-export const exampleObservable$ = new Observable((subscriber) => {
+const observable = new Observable((subscriber) => {
   subscriber.next("a");
   subscriber.next("b");
   subscriber.next("c");
@@ -9,6 +9,13 @@ export const exampleObservable$ = new Observable((subscriber) => {
   }, 1000);
 });
 
-exampleObservable$.subscribe((value) => {
+observable.subscribe((value) => {
   console.log("Got value", value);
 });
+
+/*
+Got value a
+Got value b
+Got value c
+Got value d
+*/

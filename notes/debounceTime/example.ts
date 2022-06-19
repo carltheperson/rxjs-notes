@@ -1,6 +1,6 @@
 import { debounceTime, Observable } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("a"), 10);
   setTimeout(() => subscriber.next("b"), 20);
   setTimeout(() => subscriber.next("c"), 30);
@@ -10,10 +10,10 @@ const sourceObservable = new Observable((subscriber) => {
   setTimeout(() => subscriber.next("g"), 120);
 });
 
-const debouncedObservable = sourceObservable.pipe(debounceTime(20));
+const debounced = source.pipe(debounceTime(20));
 
 const time = new Date().getTime();
-debouncedObservable.subscribe((value) => {
+debounced.subscribe((value) => {
   console.log(value, new Date().getTime() - time);
 });
 

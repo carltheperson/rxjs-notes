@@ -1,6 +1,6 @@
-import { delay, mapTo, Observable, share, tap, timer } from "rxjs";
+import { Observable, share } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   setTimeout(() => {
     subscriber.next("a " + Math.random().toFixed(3));
     subscriber.next("b " + Math.random().toFixed(3));
@@ -11,13 +11,13 @@ const sourceObservable = new Observable((subscriber) => {
   };
 });
 
-const sharedObservable = sourceObservable.pipe(share());
+const shared = source.pipe(share());
 
-const subscription1 = sharedObservable.subscribe((value) => {
+const subscription1 = shared.subscribe((value) => {
   console.log("Subscriber 1:", value);
 });
 
-const subscription2 = sharedObservable.subscribe((value) => {
+const subscription2 = shared.subscribe((value) => {
   console.log("Subscriber 2:", value);
 });
 

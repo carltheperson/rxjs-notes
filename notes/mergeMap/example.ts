@@ -1,12 +1,12 @@
 import { mergeMap, Observable } from "rxjs";
 
-const sourceObservable = new Observable<string>((subscriber) => {
+const source = new Observable<string>((subscriber) => {
   setTimeout(() => subscriber.next("a"), 0);
   setTimeout(() => subscriber.next("b"), 400);
   setTimeout(() => subscriber.next("c"), 800);
 });
 
-const mergeMappedObservable = sourceObservable.pipe(
+const mergeMapped = source.pipe(
   mergeMap(
     (letter) =>
       new Observable((subscriber) => {
@@ -17,7 +17,7 @@ const mergeMappedObservable = sourceObservable.pipe(
   )
 );
 
-mergeMappedObservable.subscribe((value) => {
+mergeMapped.subscribe((value) => {
   console.log(value);
 });
 

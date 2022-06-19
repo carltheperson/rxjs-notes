@@ -1,12 +1,18 @@
 import { ReplaySubject } from "rxjs";
 
-export const exampleSubject = new ReplaySubject();
+const subject = new ReplaySubject();
 
-exampleSubject.next("a");
-exampleSubject.next("b");
+subject.next("a");
+subject.next("b");
 
-exampleSubject.subscribe((val) => {
+subject.subscribe((val) => {
   console.log("Subscriber got", val);
 });
 
-exampleSubject.next("c");
+subject.next("c");
+
+/*
+Subscriber got a
+Subscriber got b
+Subscriber got c
+*/

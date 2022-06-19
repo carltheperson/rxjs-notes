@@ -1,6 +1,6 @@
 import { last, Observable } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   subscriber.next("a");
   subscriber.next("b");
   subscriber.next("c");
@@ -9,8 +9,12 @@ const sourceObservable = new Observable((subscriber) => {
   subscriber.complete();
 });
 
-const lastedObservable = sourceObservable.pipe(last());
+const lasted = source.pipe(last());
 
-lastedObservable.subscribe((value) => {
+lasted.subscribe((value) => {
   console.log(value);
 });
+
+/*
+e
+*/

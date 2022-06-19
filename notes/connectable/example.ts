@@ -1,12 +1,12 @@
 import { connectable, Observable } from "rxjs";
 
-const sourceObservable = new Observable((subscriber) => {
+const source = new Observable((subscriber) => {
   subscriber.next("a " + Math.random().toFixed(3));
   subscriber.next("b " + Math.random().toFixed(3));
   subscriber.next("c " + Math.random().toFixed(3));
 });
 
-const connectableObservable = connectable(sourceObservable);
+const connectableObservable = connectable(source);
 
 connectableObservable.subscribe((value) => {
   console.log("Subscriber 1:", value);

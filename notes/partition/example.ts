@@ -1,6 +1,6 @@
 import { Observable, partition } from "rxjs";
 
-const sourceObservable = new Observable<number>((subscriber) => {
+const source = new Observable<number>((subscriber) => {
   setTimeout(() => subscriber.next(1), 100);
   setTimeout(() => subscriber.next(2), 200);
   setTimeout(() => subscriber.next(3), 300);
@@ -9,7 +9,7 @@ const sourceObservable = new Observable<number>((subscriber) => {
   setTimeout(() => subscriber.next(6), 600);
 });
 
-const [partion1, partion2] = partition(sourceObservable, (num) => num % 2 == 1);
+const [partion1, partion2] = partition(source, (num) => num % 2 == 1);
 
 partion1.subscribe((value) => {
   console.log("p1:", value);
