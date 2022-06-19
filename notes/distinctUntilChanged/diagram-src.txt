@@ -1,0 +1,5 @@
+-a-a-b-a-b-b-c-d-d
+
+> distinctUntilChanged
+
+-a---b-a-b---c-d--
