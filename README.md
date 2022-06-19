@@ -43,10 +43,8 @@ Subjects:
 	- [x] [`throttleTime`](./notes/throttleTime/)
 	- [x] [`last`](./notes/last)
 	- [x] [`distinct`](./notes/distinct/)
-
-- Creation functions:
- 	- [ ] of
-
-- Not sure yet:
-	- [ ] share
 	- [ ] sample
+
+- Multicasting:
+	- [ ] [`connectable`](./notes/connectable/)
+	- [ ] share
