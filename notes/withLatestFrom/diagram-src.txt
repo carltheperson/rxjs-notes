@@ -1,3 +1,6 @@
+[styles]
+event_radius = 25 
+
 -a----b--c--|
 
 ---d---------e-|
@@ -5,5 +8,5 @@
 > o1.pipe(withLatestFrom(o2))
 
 ------1--2--|-
-1 := bd
-2 := cd
+1 := [b,d]
+2 := [c,d]
