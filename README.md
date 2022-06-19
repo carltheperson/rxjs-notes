@@ -52,7 +52,7 @@ Subjects:
 	- [x] [`share`](./notes/share/)
 
 - Util:
-	- [ ] repeat
+	- [x] [`repeat`](./notes/repeat/)
 
 - Then:
 	- [ ] camelCase
