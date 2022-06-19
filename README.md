@@ -43,8 +43,9 @@ Subjects:
 	- [x] [`throttleTime`](./notes/throttleTime/)
 	- [x] [`last`](./notes/last)
 	- [x] [`distinct`](./notes/distinct/)
-	- [ ] sample
+	- [x] [`sample`](./notes/sample/)
 
 - Multicasting:
-	- [ ] [`connectable`](./notes/connectable/)
-	- [ ] share
+	- [x] [`connectable`](./notes/connectable/)
+	- [x] [`share`](./notes/share/)
+

@@ -1,0 +1,11 @@
+> Source
+
+-a---b-c-d---
+
+> Notifier
+
+---x-------x-
+
+> sample()
+
+---a-------d-
