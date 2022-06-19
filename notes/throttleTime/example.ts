@@ -17,3 +17,9 @@ const time = new Date().getTime();
 throttledObservable.subscribe((value) => {
   console.log(value, new Date().getTime() - time);
 });
+
+/*
+a 11
+d 51
+f 100
+*/

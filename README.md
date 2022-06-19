@@ -40,8 +40,8 @@ Subjects:
 	- [x] [`filter`](./notes/filter)
 	- [x] [`take`](./notes/take)
 	- [x] [`debounceTime`](./notes/debounceTime/)
-	- [ ] throttleTime
-	- [ ] last
+	- [x] [`throttleTime`](./notes/throttleTime/)
+	- [x] [`last`](./notes/last)
 	- [ ] distinct
 
 - Creation functions:
