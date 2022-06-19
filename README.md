@@ -37,14 +37,16 @@ Subjects:
 	- [x] [`partition`](./notes/partition/)
 
 - Filtering operators:
-	- [x] [`filter`](./notes/filer)
-	- [ ] take
-	- [ ] throttle
-	- [ ] debounce
+	- [x] [`filter`](./notes/filter)
+	- [x] [`take`](./notes/take)
+	- [x] [`debounceTime`](./notes/debounceTime/)
+	- [ ] throttleTime
+	- [ ] last
+	- [ ] distinct
 
 - Creation functions:
  	- [ ] of
 
 - Not sure yet:
-	- [ ] last
 	- [ ] share
+	- [ ] sample
