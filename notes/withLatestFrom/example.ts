@@ -29,3 +29,16 @@ combinedObservable.subscribe({
   next: (value) => console.log("comb:", value),
   complete: () => console.log("comb:", "Done"),
 });
+
+/*
+o1:   a
+o2:   d
+o1:   b
+comb: [ 'b', 'd' ]
+o1:   c
+comb: [ 'c', 'd' ]
+o1:   Done
+comb: Done
+o2:   e
+o2:   Done
+*/
