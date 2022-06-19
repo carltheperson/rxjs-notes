@@ -26,6 +26,7 @@ Subjects:
 	- [x] [`concat`](./notes/concat/)
 	- [x] [`concatAll`](./notes/concat-all/)
 	- [x] [`switchAll`](./notes/switch-all/)
+	- [x] [`pairwise`](./notes/pairwise/)
 
 - Transformation operators:
 	- [x] [`map`](./notes/map)
@@ -43,9 +44,18 @@ Subjects:
 	- [x] [`throttleTime`](./notes/throttleTime/)
 	- [x] [`last`](./notes/last)
 	- [x] [`distinct`](./notes/distinct/)
+	- [ ] distinctUntilChanged
 	- [x] [`sample`](./notes/sample/)
 
 - Multicasting:
 	- [x] [`connectable`](./notes/connectable/)
 	- [x] [`share`](./notes/share/)
 
+- Util:
+	- [ ] repeat
+
+- Then:
+	- [ ] camelCase
+	- [ ] use arrays
+	- [ ] output
+	- [ ] remove "Observable" from name

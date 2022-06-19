@@ -1,0 +1,13 @@
+[styles]
+event_radius = 25 
+
+-a-b-c-d-e-f
+
+> pairwise
+
+---1-2-3-4-5
+1 := [a,b]
+2 := [b,c]
+3 := [c,d]
+4 := [d,e]
+5 := [e,f]
