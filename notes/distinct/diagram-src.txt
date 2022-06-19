@@ -1,0 +1,5 @@
+-a-a-b-a-c-b-d-a
+
+> distinct
+
+-a---b---c---d

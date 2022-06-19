@@ -42,7 +42,7 @@ Subjects:
 	- [x] [`debounceTime`](./notes/debounceTime/)
 	- [x] [`throttleTime`](./notes/throttleTime/)
 	- [x] [`last`](./notes/last)
-	- [ ] distinct
+	- [x] [`distinct`](./notes/distinct/)
 
 - Creation functions:
  	- [ ] of
