@@ -46,7 +46,7 @@ c3
 
 ### Related
 
-- [`switchAll`](../switchALl/)
+- [`switchAll`](../switchAll/)
 
 ### Links
 
