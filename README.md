@@ -1,4 +1,4 @@
-<h1 align="center">RxJS notes</h1>
+<h1 align="center">RxJS Notes</h1>
 
 <p align="center">A collection of my RxJS notes, diagrams, and code examples.</p>
 
