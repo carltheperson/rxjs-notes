@@ -1,3 +1,13 @@
+# `concat`
+
+> Subscribe to observables in order as previous completes.
+
+<br/>
+
+![diagram](diagram.png)
+
+<!--code-snipet-start-->
+```ts
 import { concat, Observable } from "rxjs";
 
 const observable1 = new Observable((subscriber) => {
@@ -33,3 +43,17 @@ d
 e
 f
 */
+
+```
+<!--code-snipet-end-->
+
+### Related
+
+- [`concatAll`](../concatAll/)
+- [`concatMap`](../concatMap//)
+
+
+### Links
+
+- [RxJS docs](https://rxjs.dev/api/index/function/concat)
+- [learnrxjs.io](https://www.learnrxjs.io/learn-rxjs/operators/combination/concat)

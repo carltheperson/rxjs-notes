@@ -1,0 +1,66 @@
+# `withLatestFrom`
+
+> Combines the source Observable with other Observables to create an Observable whose values are calculated from the latest values of each, only when the source emits.
+
+<br/>
+
+![diagram](diagram.png)
+
+<!--code-snipet-start-->
+```ts
+import { Observable, withLatestFrom } from "rxjs";
+
+const source1 = new Observable((subscriber) => {
+  subscriber.next("a");
+  setTimeout(() => subscriber.next("b"), 400);
+  setTimeout(() => subscriber.next("c"), 600);
+  setTimeout(() => subscriber.complete(), 800);
+});
+
+const source2 = new Observable((subscriber) => {
+  setTimeout(() => subscriber.next("d"), 200);
+  setTimeout(() => subscriber.next("e"), 900);
+  setTimeout(() => subscriber.complete(), 1000);
+});
+
+const combinedObservable = source1.pipe(withLatestFrom(source2));
+
+source1.subscribe({
+  next: (value) => console.log("o1:  ", value),
+  complete: () => console.log("o1:  ", "Done"),
+});
+
+source2.subscribe({
+  next: (value) => console.log("o2:  ", value),
+  complete: () => console.log("o2:  ", "Done"),
+});
+
+combinedObservable.subscribe({
+  next: (value) => console.log("comb:", value),
+  complete: () => console.log("comb:", "Done"),
+});
+
+/*
+o1:   a
+o2:   d
+o1:   b
+comb: [ 'b', 'd' ]
+o1:   c
+comb: [ 'c', 'd' ]
+o1:   Done
+comb: Done
+o2:   e
+o2:   Done
+*/
+
+```
+<!--code-snipet-end-->
+
+### Related
+
+- [`combineLatestWith`](../combineLatestWith//)
+
+### Links
+
+- [RxJS docs](https://rxjs.dev/api/index/function/withLatestFrom)
+- [learnrxjs.io](https://www.learnrxjs.io/learn-rxjs/operators/combination/withlatestfrom)

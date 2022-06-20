@@ -60,3 +60,12 @@ Each thing will have its own README. It will contain:
 - Diagram
 - Code snippet
 - Links
+
+This readme should have:
+- terms
+	- source
+	- inner observable
+	- outer observable
+	- higher-order observable
+	- first-order observable https://rxjs.dev/api/index/function/concatAll
+- Example apps
