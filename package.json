@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "sync-code": "ts-node sync-code-snippets.ts",
+    "sync-diagrams": "ts-node generate-diagrams.ts"
   },
   "name": "rxjs-from-source",
   "version": "1.0.0",
