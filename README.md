@@ -227,48 +227,6 @@
 
 <img src="./notes/repeat/diagram.png" width="250px" />
 
-Subjects:
-
-- Classes:
-	- [x] [`Observable`](./notes/observable/)
-	- [x] [`Subject`](./notes/subject/)
-	- [x] [`BehaviorSubject`](./notes/behavior-subject/)
-	- [x] [`ReplaySubject`](./notes/replay-subject/)
-
-- Combination operators:
-	- [x] [`combineLatestWith`](./notes/combine-latest-with/)
-	- [x] [`withLatestFrom`](./notes/with-latest-from/)
-	- [x] [`merge`](./notes/merge/)
-	- [x] [`concat`](./notes/concat/)
-	- [x] [`concatAll`](./notes/concat-all/)
-	- [x] [`switchAll`](./notes/switch-all/)
-	- [x] [`pairwise`](./notes/pairwise/)
-
-- Transformation operators:
-	- [x] [`map`](./notes/map)
-	- [x] [`scan`](./notes/scan)
-	- [x] [`reduce`](./notes/reduce/)
-	- [x] [`mergeMap`](./notes/mergeMap/)
-	- [x] [`concatMap`](./notes/concatMap/)
-	- [x] [`switchMap`](./notes/switch-map/)
-	- [x] [`partition`](./notes/partition/)
-
-- Filtering operators:
-	- [x] [`filter`](./notes/filter)
-	- [x] [`take`](./notes/take)
-	- [x] [`debounceTime`](./notes/debounceTime/)
-	- [x] [`throttleTime`](./notes/throttleTime/)
-	- [x] [`last`](./notes/last)
-	- [x] [`distinct`](./notes/distinct/)
-	- [x] [`distinctUntilChanged`](./notes/distinctUntilChanged/)
-	- [x] [`sample`](./notes/sample/)
-
-- Multicasting:
-	- [x] [`connectable`](./notes/connectable/)
-	- [x] [`share`](./notes/share/)
-
-- Util:
-	- [x] [`repeat`](./notes/repeat/)
 
 # License
 
