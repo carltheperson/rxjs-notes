@@ -38,9 +38,9 @@
   * [`sample`](#-sample-)
 - [Multicasting](#multicasting)
   * [`connectable`](#-connectable-)
-  * [`share`](#-share-)
+  * [`share`](#share)
 - [Utils](#utils)
-  * [`repeat`](#-repeat-)
+  * [`repeat`](#`repeat`)
 
 
 # Notes
