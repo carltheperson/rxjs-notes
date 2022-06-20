@@ -1,0 +1,8 @@
+[styles]
+event_radius = 20
+
+-a-b------c--
+
+> subscribe()
+
+     (a-b)c-
