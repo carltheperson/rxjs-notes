@@ -6,6 +6,43 @@
 
 # Table of contents
 
+- [Classes](#classes)
+  * [`Observable`](#-observable-)
+  * [`Subject`](#-subject-)
+  * [`BehaviorSubject`](#-behaviorsubject-)
+  * [`ReplaySubject`](#-replaysubject-)
+- [Combination operators](#combination-operators)
+  * [`combineLatestWith`](#-combinelatestwith-)
+  * [`withLatestFrom`](#-withlatestfrom-)
+  * [`merge`](#-merge-)
+  * [`concat`](#-concat-)
+  * [`concatAll`](#-concatall-)
+  * [`switchAll`](#-switchall-)
+  * [`pairwise`](#-pairwise-)
+- [Transformation operators](#transformation-operators)
+  * [`map`](#-map-)
+  * [`scan`](#-scan-)
+  * [`reduce`](#-reduce-)
+  * [`mergeMap`](#-mergemap-)
+  * [`concatMap`](#-concatmap-)
+  * [`switchMap`](#-switchmap-)
+  * [`partition`](#-partition-)
+- [Filtering operators](#filtering-operators)
+  * [`filter`](#-filter-)
+  * [`take`](#-take-)
+  * [`debounceTime`](#-debouncetime-)
+  * [`throttleTime`](#-throttletime-)
+  * [`last`](#-last-)
+  * [`distinct`](#-distinct-)
+  * [`distinctUntilChanged`](#-distinctuntilchanged-)
+  * [`sample`](#-sample-)
+- [Multicasting](#multicasting)
+  * [`connectable`](#-connectable-)
+  * [`share`](#-share-)
+- [Utils](#utils)
+  * [`repeat`](#-repeat-)
+
+
 # Notes
 
 ## Classes
@@ -178,13 +215,9 @@
 
 [Go to note folder](./notes/connectable/)
 
-<img src="./notes/connectable/diagram.png" width="250px" />
-
 ### `share`
 
 [Go to note folder](./notes/share/)
-
-<img src="./notes/share/diagram.png" width="250px" />
 
 ## Utils
 
@@ -252,3 +285,7 @@ This readme should have:
 	- higher-order observable
 	- first-order observable https://rxjs.dev/api/index/function/concatAll
 - Example apps
+
+# License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
