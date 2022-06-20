@@ -43,7 +43,7 @@
   * [`repeat`](#repeat)
 
 
-# Notes
+# Notes Overview
 
 ## Classes
 
@@ -269,22 +269,6 @@ Subjects:
 
 - Util:
 	- [x] [`repeat`](./notes/repeat/)
-
-Each thing will have its own README. It will contain:
-- Short docs description
-- My own description/notes
-- Diagram
-- Code snippet
-- Links
-
-This readme should have:
-- terms
-	- source
-	- inner observable
-	- outer observable
-	- higher-order observable
-	- first-order observable https://rxjs.dev/api/index/function/concatAll
-- Example apps
 
 # License
 
